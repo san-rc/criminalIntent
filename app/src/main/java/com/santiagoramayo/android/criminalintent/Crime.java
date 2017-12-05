@@ -1,50 +1,50 @@
 package com.santiagoramayo.android.criminalintent;
 
-
 import java.util.Date;
 import java.util.UUID;
 
 
+
 public class Crime {
     private UUID mId;
-    private String mtitle;
+    private String mTitle;
     private Date mDate;
-    private boolean msolved;
+    private boolean mSolved;
 
     public Crime(){
         mId = UUID.randomUUID();
         mDate = new Date();
     }
 
-    public UUID getmId() {
+    public UUID getId() {
         return mId;
     }
 
-    public String getMtitle() {
-        return mtitle;
-    }
-
-    public Date getmDate() {
-        return mDate;
-    }
-
-    public boolean isMsolved() {
-        return msolved;
-    }
-
-    public void setmId(UUID mId) {
+    public void setId(UUID mId) {
         this.mId = mId;
     }
 
-    public void setMtitle(String mtitle) {
-        this.mtitle = mtitle;
+    public String getTitle() {
+        return mTitle;
     }
 
-    public void setmDate(Date mDate) {
+    public void setTitle(String mTitle) {
+        this.mTitle = mTitle;
+    }
+
+    public Date getDate() {
+        return mDate;
+    }
+
+    public void setDate(Date mDate) {
         this.mDate = mDate;
     }
 
-    public void setMsolved(boolean msolved) {
-        this.msolved = msolved;
+    public boolean isSolved() {
+        return mSolved;
+    }
+
+    public void setSolved(boolean mSolved) {
+        this.mSolved = mSolved;
     }
 }
